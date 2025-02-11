@@ -1,0 +1,52 @@
+AT command for HTTPGET Function
+
+Set PDP Context: AT+QIFGCNT=0
+
+Set APN (Access Point Name): AT+QICSGP=1,"internet"
+
+PDP Registration: AT+QIREGAPP
+
+PDP Activation: AT+QIACT
+
+Set HTTP URL: AT+QHTTPURL=53,30
+
+https://chinnarajacr.github.io/mp3-hosting/karthi.txt
+
+Send HTTP GET Request: 	AT+QHTTPGET=60
+
+Read HTTP Response: AT+QHTTPREAD=30
+
+Deactivate PDP Context: AT+QIDEACT
+
+
+
+
+AT command for HTTPDOWNLOAD Function
+
+Set PDP Context: AT+QIFGCNT=0
+
+Set APN: AT+QICSGP=1,"internet"
+
+PDP Registration: AT+QIREGAPP
+
+PDP Activation: AT+QIACT
+
+Set HTTP URL: AT+QHTTPURL=53,30
+
+https://chinnarajacr.github.io/mp3-hosting/karthi.txt
+
+Send HTTP GET Request: AT+QHTTPGET=60
+
+Download the File: AT+QHTTPDL="RAM:1.TXT",6851
+
+Deactivate PDP Context: AT+QIDEACT
+
+
+
+
+
+
+
+
+
+
